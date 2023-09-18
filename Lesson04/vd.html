@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header,section,footer, nav</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header,section,footer{
+            border: 1px solid gray;
+            margin: .5rem 0;
+            padding: .5rem;
+        }
+        section{
+            height: 250px;
+        }
+        header ul{
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        header a{
+            display: block;
+            padding: .5rem;
+            text-decoration: none;
+        }
+        header a:hover{
+            color:green;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <nav>
+        <ul>
+            <li><a href="#" title="Trang chu">Trang chu</a></li>
+            <li><a href="#" title="Gioi thieu">Gioi thieu</a></li>
+            <li><a href="#" title="San pham">San pham</a></li>
+            <li><a href="#" title="Dich vu">Dich vu</a></li>
+            <li><a href="#" title="Lien he">Lien he</a></li>
+        </ul>
+    </nav>
+   </header>
+    <section>
+        <article>
+            <h2>Gioi thieu ve Devmaster Academy</h2>
+            <p>Devmaster Academy luon di dau trong dao tao CNTT</p>
+        </article>
+    </section>
+    <footer>
+        <p>Ban quyen thuoc ve <span> VIEN CONG NGHE VA DAO TAO DEVMASTER</span></p>
+    </footer>
+</body>
+</html>

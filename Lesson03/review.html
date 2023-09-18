@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review table and form</title>
+</head>
+<body>
+    <h1>Review table and form</h1>
+    <form action="" method="post">
+        <table border="0" cellspacing="0" cellpadding="5" align="center" width="80%">
+            <thead>
+                <tr>
+                    <th colspan="2">
+                        <h2 align="center">THONG TIN DANG KY</h2>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="hoTen">Ho ten:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="hoTen" id="hoTen" placeholder="Nhap ho va ten ...">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="taiKhoan">Tai khoan:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="taiKhoan" id="taiKhoan" placeholder="Nhap tai khoan ...">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="matKhau">Mat khau:</label>
+                    </td>
+                    <td>
+                        <input type="password" name="matKhau" id="matKhau" placeholder="Nhap mat khau ...">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="gTinh">Gioi tinh:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gt" id="gtNam" checked>
+                        <label for="gtNam">Nam</label>
+                        <input type="radio" name="gt" id="gtNu">
+                        <label for="gtNu">Nu</label>
+                        <input type="radio" name="gt" id="gtKhac">
+                        <label for="gtKhac">Khac</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email" placeholder="abc@gmail.com">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="dienThoai">Dien thoai:</label>
+                    </td>
+                    <td>
+                        <input type="tel" name="dienThoai" id="dienThoai" placeholder="(+84) 0983664256"
+                        pattern="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="diaChi">Dia chi:</label>
+                    </td>
+                    <td>
+                       <textarea name="diaChi" id="diaChi" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="avatar">Anh:</label>
+                    </td>
+                    <td>
+                        <input type="file" name="avatar" id="avatar">
+                    </td>
+                </tr>
+                 
+                <tr>
+                    <td>
+                        <label for="">Number:</label>
+                    </td>
+                    <td>
+                        <input type="number" name="num" id="num" max="100" min="0" step="5" value="50">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">Range:</label>
+                    </td>
+                    <td>
+                        <input type="range" name="ran" id="ran" max="100" min="0" step="5" value="10">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">Date:</label>
+                    </td>
+                    <td>
+                        <input type="date" name="ngaySinh" id="ngaySinh" value="01/01/1975">
+                    </td>
+                </tr>
+
+                <tr>
+                   <td>
+                    <label for="">Color:</label>
+                   </td>
+                   <td>
+                    <input type="color" name="mau" id="mau" value="#ccc">
+                   </td>
+                </tr>
+
+                <tr>
+                    <td>
+                     <label for="">Select:</label>
+                    </td>
+                    <td>
+                        <select name="chonTinh" id="chonTinh">
+                            <option value="CT">Chon tinh</option>
+                            <option value="HN">Ha Noi</option>
+                            <option value="TB">Thai Binh</option>
+                            <option value="Tp.HCM">TP.Ho Chi Minh</option>
+                            <option value="CM">Ca Mau</option>
+                            <option value="DN">Da Nang</option>
+                            <option value="HG">Ha Giang</option>
+                        </select>
+                    </td>
+                 </tr>
+
+                <tr>
+                    <td>
+                        <label for=""></label>
+                    </td>
+                    <td>
+                        <input type="submit" name="btnDangKy" value="Dang ky">
+                        <input type="reset" name="btnLamlai" value="Lam lai">
+
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

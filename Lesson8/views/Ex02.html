@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sử dụng các hàm alert / confirm / prompt</title>
+</head>
+<body>
+    <section>
+        <h1>Sử dụng các hàm alert / cònirm / prompt</h1>
+        <button onclick="alert('Hàm alert')">Hàm alert</button>
+        <button onclick="fn_Confirm()">Hàm confirm</button>
+        <button onclick="fn_Prompt()">Hàm prompt</button>
+    </section>
+    <script>
+        //có 2 cách viết hàm
+        // Cách 1: arow function: dùng trong ES6
+        fn_Confirm = () => {
+            let val = confirm('Bạn có muốn cái gì đó không?');
+            alert(val);
+        }
+        // Cách 2: normal function:
+        function fn_Prompt(){
+            let val = prompt('Mời bạn nhập tên:');
+            alert("Xin chào," + val);
+        }
+    </script>
+</body>
+</html>

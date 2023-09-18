@@ -1,0 +1,38 @@
+Làm việc với ngôn ngữ lập trình kịch bản Javascript
+1. Syntax 
+  - nhúng / tương tác của js với html
+2. Biến , hằng , kiểu dữ liệu, toán tử, toán hạng, biểu thức
+   câu lệnh, khối lệnh,...
+3. I/O
+4. Các cấu trúc điều khiển (Javascript) - ( 3 loại)
+   a) Lựa chọn / rẽ nhánh
+      -if: (4 dạng if)
+          + if đơn
+          + if đầy đủ
+          + if bậc thang
+          + if lồng nhau
+       -switch
+   b) Lặp (Loop)
+        b1)  for : 4 dạngfor
+            + for đầy đủ
+            + for khuyết (kkhuyeets một trong các thành phần của for)
+            + for khuyết toàn bộ 
+                for ( ; ; ){...}
+            + for không thân
+              for(...,....,....,....);
+        b2) while
+        b3) do ... while
+        b4) foerEach
+
+   c) Lệnh nhảy
+        - break;
+        - continue;
+        - return;
+
+5. Mảng 
+6. Hàm 
+7. Xử lý chuỗi
+8. DOM
+9. ES6
+   - OOP
+   

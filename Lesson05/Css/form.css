@@ -1,0 +1,39 @@
+
+.input-email, .input-pass{
+    padding: 5px 20px;
+    margin-top: 2px;
+}
+form{
+    background-color: #ccc;
+    padding: 30px 40px;
+    width: 220px;
+}
+div img{
+    border-radius: 50%;
+    margin-left: 13px;
+}
+#btn{
+    background-color: rgb(24, 24, 239);
+    width: 220px;
+    padding: 6px 72px;
+    margin-top: 10px;
+}
+.link a {
+    font-size: 11px;
+    color: rgb(80, 41, 237);
+    text-decoration: none;
+}
+
+/* do uu tien trong css: */
+#demo{
+    color: red;
+}
+.demo{
+    color: green;
+}
+[data-attr="demo"]{
+    color: yellow;
+}
+a{
+    color: blue;
+}

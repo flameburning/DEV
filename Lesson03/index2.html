@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login information</title>
+    <style>
+        #form-login{
+            background-color: #ccc;
+            position: relative;
+        }
+        form{
+            margin: 1rem;
+            padding: 1rem;
+            background-color: aliceblue;
+        }
+        .form-group{
+            display: flex;
+            margin: 1rem;
+        }
+        .form-group label{
+            width: 5rem;
+        }
+        .form-control{
+            width: calc(100% - 50px);
+            border: 1px solid#ccc;
+            padding: .25rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <section id="form-login">
+        <form action="" method="post">
+            <div class="head-title">
+                <h1>Login information</h1>
+            </div>
+            <div class="form-group">
+                <div class="logo">
+                    <img src="https://devmaster.edu.vn/images/logo.png" alt="Devmaster">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="taiKhoan">Tai khoan:</label>
+                <div>
+                    <input type="text" name="taiKhoan" id="taiKhoan" placeholder="Nhap tai khoan" class="form-control">
+                    <span class="error" id="errTaiKhoan">(*)</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="matKhau">Mat khau:</label>
+                <div>
+                    <input type="password" name="matKhau" id="matKhau" placeholder="Nhap mat khau" class="form-control">
+                    <span class="error" id="errMatKhau">(*)</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for=""></label>
+                <div>
+                    <input type="checkbox" name="ckGhiNho" id="ckGhiNho">
+                    <label for="ckGhiNho">Ghi nho</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for=""></label>
+                <div>
+                    <input type="submit" value="Login" name="btnLogin" class="btn btn-praimary">
+                    <input type="reset" value="Reset" name="btnReset" class="btn btn-secondary">
+                </div>
+            </div>
+            
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,35 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+header .nav{
+    display: flex;
+    margin: auto;
+    width: 500px;
+}
+header ul{
+    background-color: green;
+    display: flex;
+    width: 500px;
+    justify-content: center;
+
+}
+header ul .item{
+    padding: 5px 15px;
+    border-left:1px solid #000 ;
+    
+}
+/* cách 1 */
+#item{
+    border: none;
+    /* tạo thêm id để css mất border-left đầu của trang chủ */
+}
+/* cách 2 */
+header ul .item:first-child{
+     border: none;
+       /* làm mất border-left đầu của trang chủ  */
+}

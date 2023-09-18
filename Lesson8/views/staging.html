@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cú pháp tương tác cuả Javascript với HTML</title>
+
+</head>
+<body>
+  <section>
+    <h1>Cú pháp tương tác cuả Javascript với HTML</h1>
+    <pre>
+      -inline (thuộc tính sự kiện của phần tử)
+      -internal ( viết lệnh xử lý trong cặp thẻ script)
+      -external( vieets lệnh js trong file.js)
+    </pre>
+  </section>
+  <!-- Cach 1 -->
+  <section id="zone1">
+       <h2>-inline (thuộc tính sự kiện của phần tử)</h2>
+       <button onclick="alert('clicked')"> Click here</button>
+  </section>
+
+  <!-- Cach 2 -->
+  <section id="zone2">
+    <h2>internal ( viết lệnh xử lý trong cặp thẻ script)</h2>
+    <p>
+       -Nên đặt trong phần head
+       - Tuy nhiên có thể viết ở cuối trang , trước thẻ đóng body
+    </p>
+    <button onclick="fn_Click()"> Tag script</button>
+  </section>
+
+  <!-- Cach 3 -->
+  <section id="zone3">
+    <h2>external( vieets lệnh js trong file.js)</h2>
+    <p>
+       -Viết mã lệnh javascript trong file.js
+       -Nhúng file  js vào html thông qua thẻ script
+       -Nên đặt cuối trang, trước thẻ đóng body
+    </p>
+    <button onclick="fn_ClickHere()">External File</button>
+  </section>
+
+   <!-- Phan khac -->
+     <!--Cách 1: tương tác trên trực tiếp element -->
+     <h1 onclick="alert('Chào mừng bạn đến với Devmaster')">Chào mừng bạn đến với Js</h1>
+     <pre>
+         *Luyện tập xây dựng quy trình (các bước làm)
+           1,Định nghĩa 
+             -Ngôn ngữ lập trình kịch bản
+             -Hỗ trợ rộng rãi
+           2, Mục đích
+             - Cung cấp khả năng tương tác với website
+           3,Quy tắc
+             -Phân biệt chữ hoa ,chữ thường
+             -Luôn có cặp kí hiệu mở và đóng như {},()
+           4,Cách sử dụng: 3 cách
+     </pre>
+     <!-- Cách 2:trực tiếp -->
+     <!-- <script>
+         alert('Chào mừng bạn đến với Devmaster')
+     </script> -->
+     <!-- Cách 3 : nhúng file js -->
+     <script language="javascript" src="../js/staging.js"></script>
+   <!-- end -->
+
+   <!-- zone2 -->
+   <script>
+    function fn_Click(){
+       document.bgColor="green";
+       document.body.style.color="red";
+    }
+   </script>
+  
+</body>
+</html>

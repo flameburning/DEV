@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #ccc;
+        }
+        form{
+            margin: 1rem auto;
+            width: 300px;
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        .form-group{
+           display: flex;
+           margin:.5rem 0;
+        }
+        .form-group>label{
+            display: block;
+             width: 100px;
+        }
+        .form-group>div{
+            width: 200px;
+        }
+        .form-group>div input[type="text"]
+        .form-group>div input[type="password"]
+        {
+            width: calc(100%-30px);
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="">
+        <div>
+            <h2>DANG NHAP HE THONG</h2>
+        </div>
+        <div class="form-group">
+              <label for="taiKhoan">Tai khoan</label>
+              <div>
+                <input type="text" name="taiKhoan"  id="taiKhoan">
+                <span id="errTaiKhoan" class="error">(*)</span>
+              </div>
+        </div>
+        <div class="form-group">
+            <label for="matKhau">Mat khau:</label>
+            <div>
+              <input type="password" name="matKhau"  id="matKhau">
+              <span id="errMatKhau" class="error">(*)</span>
+            </div>
+            <div class="form-group">
+                <label for=""></label>
+                <div>
+                    <input type="checkbox" name="ckGhinho" id="ckGhinho">
+                    <label for="ckGhinho">Ghi nho</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for=""></label>
+                <div>
+                    <input type="submit" value="Dang nhap" id="btnDangNhap" name="btnDangNhap" class="btn btn-primary"> 
+                    <!-- class="btn btn-primary":nut chinh de css -->
+                    <input type="reset" value="Lam lai" id="btnLamLai" name="btnLamLai" class="btn btn-secondary">
+                </div>
+            </div>
+      </div>
+    </form>
+</body>
+</html>
